@@ -20,11 +20,41 @@ export const NavBar =Styled.nav`
     color:white;
     padding:0 50px;
     /* border:solid 1px red; */
+
+    /* Desktop 769 to 980*/
+
+    @media (max-width:980px){
+     
+        /* background-color: yellow ; */
+    }
+
+      /* Laptop 321 to 768 */
+    @media (max-width:768px){
+     
+        /* background-color: green ; */
+
+    }
+
+    /* Phone  0 to 320 */
+    @media (max-width:320px){
+        
+        /* background-color:red ; */
+
+    }
+    
+
+
+
+  
+
+   
+
+
 `
 
 export const Left = Styled.div`
 flex:1;
-border:solid 1px red;
+/* border:solid 1px red; */
 display:flex ;
 align-items:center;
 `
@@ -33,30 +63,33 @@ align-items:center;
 
 export const Right = Styled.div`
 flex:2;
-border:solid 1px red;
 display:flex ;
-justify-content:space-around;
 align-items:center;
 gap:100px;
 
 ul{
    
     display:flex ;
-    justify-content: space-around;
+    justify-content: flex-end;
     align-items:center;
     flex:2 ;
-    border:solid 1px red;
+    gap:20px;
+    height:60px ;
+    /* border:solid 1px green; */
 }
 ul li{
     list-style:none;
-    border:solid 1px red;
+    height:59px;
+    /* border:solid 1px green; */
 }
 
 ul li a{
     color:white;
     text-decoration:none;
+    line-height:59px;
+    /* border:solid 1px red; */
+    
 }
-
 `
 
 export const Login = Styled.button`
